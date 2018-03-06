@@ -33,7 +33,7 @@ public class EjerciciosJava {
 
     
     
-    
+    //NIVEL 1
     
     
     public boolean palindromoEjercicio1(String frase){
@@ -134,7 +134,31 @@ public class EjerciciosJava {
             System.out.println((filas[i]));
         }
     }
+    
+    //NIVEL 2
+    
+        public boolean escaleraDePalabras(char[][] escalera) {
+	boolean esc = true;						
+	int letrasDiferentes;							
+	for (int fila = 0; fila < escalera.length - 1; fila++) {		
+	    letrasDiferentes = 0;						
+	    if (escalera[fila].length == escalera[fila + 1].length) {		
+		for (int columna = 0; columna < escalera[fila].length; columna++) {
+		    if (escalera[fila][columna] != escalera[fila + 1][columna]) {
+			letrasDiferentes++;
+		    }
+		    if (letrasDiferentes > 1) {					
+			esc = false;
+		    }
+		}
+	    } else {
+		System.out.println("Distinta longitud");
+	    }
+	}
+	return esc;
+    }
 
+        
     
     
     
