@@ -165,7 +165,15 @@ public class EjerciciosJava {
     
  public static void main(String[] args) {
     EjerciciosJava ejercicio1 = new EjerciciosJava();
-    System.out.println(ejercicio1.acronimo("Alta Velocidad Española"));
+    System.out.println(ejercicio1.palindromoEjercicio1("ACASO HUBO BUHOS ACA"));//TRUE
+    System.out.println(ejercicio1.palindromoEjercicio1("JOAQUIN SIERRA"));//FALSE
+    System.out.println(ejercicio1.isograma("hola"));//TRUE
+    System.out.println(ejercicio1.isograma("holo"));//FALSE
+    System.out.println(ejercicio1.anagrama("mora", "amor"));//TRUE
+    System.out.println(ejercicio1.anagrama("moro", "amor"));//FALSE
+    System.out.println(ejercicio1.acronimo("Alta Velocidad Española"));//AVE
+    System.out.println(ejercicio1.acronimo("Objeto Volador No Identificado"));//OVNI
+    System.out.println(ejercicio1.acronimo("Tecnología de la Informacion y de las Comunicaciones"));//TIC
     ejercicio1.calendario(3);
     
 
