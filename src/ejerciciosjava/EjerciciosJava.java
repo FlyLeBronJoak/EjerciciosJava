@@ -190,7 +190,6 @@ public class EjerciciosJava {
 	    {'G', 'A', 'M', 'O'},
 	    {'G', 'A', 'T', 'O'},
 	    {'M', 'A', 'T', 'O'},};
-	System.out.println("Lista Verdadero");
 	System.out.println(ejercicio1.escaleraDePalabras(listaPalabras));
 	
 
